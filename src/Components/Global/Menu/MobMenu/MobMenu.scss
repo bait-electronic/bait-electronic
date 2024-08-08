@@ -1,0 +1,140 @@
+.mob-menu {
+  background-color: inherit;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 65px;
+  overflow: hidden;
+  z-index: 100;
+  &__header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &__logo-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding-inline: 16px;
+    width: 100%;
+    height: 50px;
+    img {
+      height: 100%;
+    }
+  }
+  &__nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: calc(100vh - 65px);
+  }
+  &__items {
+    width: 100%;
+    height: calc((100vh - 65px) / 4.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span {
+      margin: auto;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    &:hover {
+      box-shadow: 0 0 56px 0 #88878736 inset;
+    }
+  }
+  &__home {
+    background-color: #eee;
+    z-index: 55;
+  }
+  &__about-us {
+    background-color: #d3d3d3;
+    z-index: 55;
+  }
+  &__introduction-of-products {
+    background-color: #ccc;
+    z-index: 55;
+  }
+  &__articles {
+    background-color: #c1c1c1;
+    z-index: 55;
+  }
+  &__contact-us {
+    background-color: #b9b9b9;
+    z-index: 55;
+  }
+  // &__box-0 { }
+  &__hamburger-check-btn {
+    display: none;
+  }
+  &__hamburger {
+    position: absolute;
+    top: 17px;
+    right: 5%;
+    width: 50px;
+    height: 30px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      position: relative;
+      width: 50px;
+      height: 6px;
+      border-radius: 5px;
+      background-color: #2d3d5d;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  &__hidden-nav-menu {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  &__show-nav-menu {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: -100%;
+    transition: all 5s ease-in-out;
+    transform: scale(1);
+    top: 65px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+  &__nav-wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    a {
+      transition: color 0.2s ease-in-out;
+      &:hover {
+        box-shadow: 0 0 15px 10px #8d8d8d4d inset;
+      }
+    }
+  }
+}
+#toggle:checked + .mob-menu__hamburger {
+  :first-child {
+    transform: rotate(-45deg);
+    margin-top: 18px;
+  }
+  :last-child {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 18px;
+  }
+  :nth-child(0n + 2) {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    top: 18px;
+    transition: all 0.3s ease-in-out;
+  }
+}

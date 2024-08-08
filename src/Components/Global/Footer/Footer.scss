@@ -1,0 +1,138 @@
+.footer {
+  width: 100%;
+  height: fit-content;
+  margin-top: 64px;
+  &__banner {
+    background-color: #2d3d5d;
+    width: 100%;
+    height: 85px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  &__banner-br {
+    display: none;
+  }
+  &__banner-bg-image {
+    pointer-events: none;
+    position: absolute;
+    top: -185px;
+    width: 100%;
+    // height: 300px;
+    z-index: -1;
+    opacity: 0.1;
+  }
+  &__footer-wrapper {
+    background-color: #2d3d5d;
+    width: 100%;
+    height: fit-content;
+    margin-top: 16px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    color: #7c8594;
+  }
+  &__footer-bg-image {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.15;
+  }
+  &__info {
+    z-index: 2;
+    width: 100%;
+    min-height: 260px;
+    display: flex;
+  }
+  &__product {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+  }
+  &__product-column {
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    a,
+    span {
+      font-size: 14px;
+      height: 20%;
+    }
+    a {
+      &:hover {
+        cursor: pointer;
+        color: white;
+      }
+    }
+    h3 {
+      text-align: right;
+      color: inherit;
+      font-size: 20px;
+      margin: 0;
+    }
+  }
+  &__social-media {
+    width: 200px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    a {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      &:hover {
+        font-size: 32px;
+      }
+    }
+  }
+  &__programer-info {
+    text-align: center;
+    a {
+      color: rgb(142, 178, 255);
+      text-decoration: underline;
+    }
+  }
+}
+@media screen and (max-width: 1080px) {
+  .footer {
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__product {
+      padding-right: 16px;
+      flex-direction: column;
+    }
+  }
+}
+@media screen and (max-width: 780px) {
+  .footer {
+    &__banner {
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .footer {
+    &__banner-br {
+      display: inline;
+    }
+  }
+}

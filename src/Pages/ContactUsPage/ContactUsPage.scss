@@ -1,0 +1,12 @@
+@use "../../Assets/Global-styles/mixin.scss";
+.contact-us-page {
+  @include mixin.be-page-style();
+  background-color: #b9b9b9;
+  &__header {
+    width: 100%;
+    img {
+      width: 100%;
+      opacity: 0.9;
+    }
+  }
+}

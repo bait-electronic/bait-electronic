@@ -1,0 +1,28 @@
+@import "../../../Assets/Global-styles/Variable.scss";
+.be-navbar {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  &__img {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .be-nav-item {
+    &__item {
+      padding: 4px 10px 2px;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .be-navbar {
+    top: 65px;
+  }
+}

@@ -1,0 +1,53 @@
+@import "../../Assets/Global-styles/Variable.scss";
+.icon-style {
+  height: 18px;
+  text-align: center;
+}
+.icon-style :first-child {
+  font-size: large;
+  padding-top: 3px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-weight: normal;
+}
+h3 {
+  text-align: center;
+  height: 30px;
+  font-weight: 700;
+  font-size: 32px;
+  color: $color-logo0;
+  margin-bottom: 40px;
+}
+input {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+button {
+  margin: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

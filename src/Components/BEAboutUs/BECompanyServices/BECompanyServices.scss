@@ -1,0 +1,129 @@
+@import "../../../Assets/Global-styles/Variable.scss";
+.be-company-services {
+  width: 100%;
+  h3 {
+    text-align: right;
+    text-decoration: red underline 2px;
+  }
+  &__promotional-items {
+    width: 100%;
+    margin-bottom: 32px;
+    h4 {
+      font-size: 20px;
+      font-weight: 700;
+      color: $color-logo0;
+    }
+  }
+  &__promotional-text {
+  }
+  &__promotional-img {
+    padding-block: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    a {
+      width: 150px;
+      text-align: center;
+      img {
+        width: 100%;
+      }
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+  &__question-and-answer {
+    width: 100%;
+  }
+  &__question-and-answer-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: $color-logo0;
+  }
+  &__question-and-answer-image-wrapper {
+    width: 100%;
+    padding-left: 24px;
+    img {
+      width: 100%;
+    }
+  }
+  &__phone-services {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    direction: ltr;
+    padding-left: 16px;
+    h4 {
+      font-size: 20px;
+      font-weight: 700;
+      color: $color-logo0;
+    }
+  }
+  &__phone-services-image {
+    width: 40%;
+    margin-left: 5%;
+    img {
+      width: 100%;
+    }
+  }
+  &__phone-services-body-wrapper {
+    width: 50%;
+    direction: rtl;
+  }
+  &__phone-services-body {
+    a {
+      padding-top: 15px;
+      display: block;
+    }
+  }
+}
+.expert-before-buying {
+  position: relative;
+  .be-company-services-items__body {
+    img {
+      width: 55%;
+      position: absolute;
+      top: -40%;
+      right: 0;
+      z-index: 0;
+      opacity: 0.05;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .services-new {
+    padding-left: 0;
+    .be-company-services-items__image-wrapper {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 555px) {
+  .be-company-services {
+    &__promotional-img {
+      flex-direction: column;
+      align-items: center;
+      a {
+        padding-bottom: 24px;
+      }
+    }
+  }
+  .expert-before-buying {
+    .be-company-services-items {
+      &__main-wrapper {
+        flex-direction: column;
+      }
+      &__main {
+        width: 100%;
+      }
+      &__image-wrapper {
+        width: 80%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

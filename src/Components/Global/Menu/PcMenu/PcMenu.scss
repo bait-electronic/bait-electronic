@@ -1,0 +1,73 @@
+.pc-menu {
+  // opacity: 0.35; //////////////////// delet this
+  &__nav-menu {
+    width: 270px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+  }
+  &__items {
+    padding-top: 16px;
+    height: 100%;
+    writing-mode: vertical-lr;
+    display: flex;
+    justify-content: flex-end;
+    right: 0;
+    transition-property: left, width;
+    transition-duration: 0.15s;
+    box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.178);
+    position: absolute;
+  }
+  &__home {
+    background-color: #eee;
+    z-index: 50;
+  }
+  &__about-us {
+    background-color: #d3d3d3;
+    z-index: 51;
+  }
+  &__introduction-of-products {
+    background-color: #ccc;
+    z-index: 52;
+  }
+  &__articles {
+    background-color: #c1c1c1;
+    z-index: 53;
+  }
+  &__contact-us {
+    background-color: #b9b9b9;
+    z-index: 54;
+  }
+  &__box-0 {
+    width: 50px;
+    &:hover {
+      width: 70px;
+    }
+  }
+  &__box-1 {
+    width: 100px;
+    &:hover {
+      width: 120px;
+    }
+  }
+  &__box-2 {
+    width: 150px;
+    &:hover {
+      width: 170px;
+    }
+  }
+  &__box-3 {
+    width: 200px;
+    &:hover {
+      width: 220px;
+    }
+  }
+  &__box-4 {
+    width: 250px;
+    &:hover {
+      width: 270px;
+    }
+  }
+}

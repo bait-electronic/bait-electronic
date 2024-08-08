@@ -1,0 +1,11 @@
+.be-header {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 992px) {
+  .be-header {
+    display: none;
+  }
+}

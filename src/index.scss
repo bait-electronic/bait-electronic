@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Peyda";
+  src: url("./Assets/font/eot/peyda-regular.eot");
+  src: url("./Assets/font/eot/peyda-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./Assets/font/woff2/peyda-regular.woff2") format("woff2"),
+    url("./Assets/font/woff/peyda-regular.woff") format("woff"),
+    url("./Assets/font/ttf/peyda-regular.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Peyda";
+  src: url("./Assets/font/eot/peyda-medium.eot");
+  src: url("./Assets/font/eot/peyda-medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("./Assets/font/woff2/peyda-medium.woff2") format("woff2"),
+    url("./Assets/font/woff/peyda-medium.woff") format("woff"),
+    url("./Assets/font/ttf/peyda-medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Peyda";
+  src: url("./Assets/font/eot/peyda-bold.eot");
+  src: url("./Assets/font/eot/peyda-bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./Assets/font/woff2/peyda-bold.woff2") format("woff2"),
+    url("./Assets/font/woff/peyda-bold.woff") format("woff"),
+    url("./Assets/font/ttf/peyda-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+* {
+  font-family: "Peyda";
+  box-sizing: border-box;
+  line-height: 30px;
+  word-spacing: 2px;
+}
+html {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #eee;
+  width: 100vw;
+  max-width: 1515px;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* user-select: none; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  color: #2d3d5d;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.be-root {
+  width: 100%;
+  max-width: 1235px;
+  height: fit-content;
+  padding-inline: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+@media screen and (max-width: 1800px) {
+  .be-root {
+    width: calc(100% - 290px);
+    margin-right: 290px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .pc-menu {
+    display: none;
+  }
+  .be-root {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 993px) {
+  .pc-menu {
+    display: flex;
+  }
+  .mob-menu {
+    display: none;
+  }
+}

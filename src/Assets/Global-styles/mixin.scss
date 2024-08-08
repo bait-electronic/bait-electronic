@@ -1,0 +1,16 @@
+@mixin be-page-style() {
+  width: 100%;
+  min-height: 99vh;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  // flex-grow: 1;
+}
+@mixin be-border($border-width) {
+  border: $border-width solid #333;
+}
+
+// @use "../../../../assets/global-styles/mixin.scss";
+// @include mixin.be-button();

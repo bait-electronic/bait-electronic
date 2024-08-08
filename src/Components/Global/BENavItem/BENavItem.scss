@@ -1,0 +1,23 @@
+@import "../../../Assets/Global-styles/Variable.scss";
+.be-nav-item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  &__item {
+    background: rgba(228, 228, 228, 0.81);
+    border-radius: 16px;
+    box-shadow: 0 4px 10px #0000002a;
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
+    padding: 4px 24px 2px;
+    color: $color-logo0;
+    margin: 8px 16px;
+    cursor: pointer;
+    &:hover {
+      background-color: rgb(236, 247, 236);
+      color: black;
+    }
+  }
+}

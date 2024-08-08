@@ -1,0 +1,48 @@
+@import "../../../Assets/Global-styles/Variable.scss";
+.be-product-item {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  h4 {
+    width: 100%;
+    padding: 8px 16px 8px;
+    color: $color-logo0;
+    font-size: 28px;
+    font-weight: bolder;
+  }
+  &__desc {
+    padding-inline: 16px;
+    text-align: justify;
+  }
+  &__benefit {
+    // background-image: url(../../../Assets/Images/Home/HomeTitre.jpg);
+    // background-position: top left;
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // background-clip: border-box;
+    padding-inline: 16px;
+    margin-block: 32px;
+  }
+  &__titre {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  &__table {
+    margin-block: 32px;
+  }
+  &__carousel {
+    width: 100%;
+    max-height: 400px;
+    margin-block: 32px;
+    .be-carousel {
+      img {
+        max-height: 400px;
+      }
+    }
+  }
+  &__usage {
+    padding-inline: 16px;
+    margin-block: 32px;
+  }
+}

@@ -1,0 +1,45 @@
+@import "../../../Assets/Global-styles/Variable.scss";
+.be-company-services-items {
+  width: 100%;
+  height: fit-content;
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    color: $color-logo0;
+  }
+  &__main-wrapper {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__main {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+    a {
+      width: fit-content;
+      font-size: 16px;
+      margin-top: 16px;
+      display: block;
+      svg {
+        margin-inline: 4px;
+      }
+    }
+  }
+  &__image-wrapper {
+    width: 35%;
+    max-width: 700px;
+    margin-inline: 16px;
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import "../../../Assets/Global-styles/Variable.scss";
+.be-top {
+  background-color: $color-logo1;
+  width: 45px;
+  height: 45px;
+  border-radius: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  z-index: 100;
+  svg {
+    path {
+      stroke: $color-logo0;
+    }
+  }
+  &:hover {
+    background-color: $color-logo0;
+    svg {
+      path {
+        stroke: $color-logo1;
+      }
+    }
+  }
+}

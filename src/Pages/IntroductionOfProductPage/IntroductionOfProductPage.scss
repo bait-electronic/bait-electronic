@@ -1,0 +1,14 @@
+@use "../../Assets/Global-styles/mixin.scss";
+.introduction-of-product-page {
+  @include mixin.be-page-style();
+  background-color: #ccc;
+}
+@media screen and (max-width: 525px) {
+  .introduction-of-product-page {
+    div {
+      .be-devider {
+        margin-inline: 0;
+      }
+    }
+  }
+}

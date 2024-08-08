@@ -1,0 +1,6 @@
+@import "../../../Assets/Global-styles/Variable.scss";
+.be-product {
+  &__popup {
+    background-color: $bgcolor-product;
+  }
+}

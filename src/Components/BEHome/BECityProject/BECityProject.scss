@@ -1,0 +1,58 @@
+@import "../../../Assets/Global-styles/Variable.scss";
+.be-city-project {
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  h3 {
+    height: 30px;
+    font-weight: 700;
+    font-size: 32px;
+    color: $color-logo0;
+  }
+  &__main {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10px;
+  }
+  &__item {
+    width: 210px;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      width: fit-content;
+      height: fit-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      img {
+        width: 150px;
+        transition: width 0.3s;
+      }
+      span {
+        position: absolute;
+        font-size: 38px;
+        font-weight: bolder;
+        opacity: 0;
+        text-shadow: 0px 0px 3px white, 0px 0px 3px white;
+      }
+      &:active,
+      &:hover {
+        img {
+          width: 200px;
+          transition: width 0.3s;
+        }
+        span {
+          opacity: 1;
+          transition: opacity 0.3s;
+        }
+      }
+    }
+  }
+}

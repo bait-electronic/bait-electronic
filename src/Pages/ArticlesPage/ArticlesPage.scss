@@ -1,0 +1,12 @@
+@use "../../Assets/Global-styles/mixin.scss";
+.articles-page {
+  @include mixin.be-page-style();
+  background-color: #c1c1c1;
+
+  &__title {
+    width: 100%;
+    padding: 32px;
+    text-align: right;
+    text-decoration: red underline 2px;
+  }
+}

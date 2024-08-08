@@ -1,0 +1,17 @@
+@import "../../../Assets/Global-styles/Variable.scss";
+.be-btn {
+  background: rgba(228, 228, 228, 0.81);
+  width: fit-content;
+  height: fit-content;
+  padding: 4px 24px 2px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px #0000002a;
+  backdrop-filter: blur(7.3px);
+  -webkit-backdrop-filter: blur(7.3px);
+  color: $color-logo0;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(236, 247, 236);
+    color: black;
+  } 
+}

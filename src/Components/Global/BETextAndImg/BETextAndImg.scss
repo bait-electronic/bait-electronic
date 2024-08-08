@@ -1,0 +1,25 @@
+.be-text-model {
+  width: 100%;
+  height: fit-content;
+  justify-content: space-between;
+  &__image-wrapper {
+    float: left;
+    width: 48%;
+    img {
+      width: 100%;
+      float: left;
+    }
+  }
+  &__main-wrapper {
+    text-align: justify;
+    h3 {
+      padding-top: 8px;
+      text-align: right;
+      text-decoration: red underline 2px;
+    }
+    img {
+      width: 100%;
+      float: right;
+    }
+  }
+}
