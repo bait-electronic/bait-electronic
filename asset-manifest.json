@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.54d72748.css",
-    "main.js": "/static/js/main.2cbe29ad.js",
+    "main.js": "/static/js/main.c1751c37.js",
     "static/media/VisitingOrganizations.mp4": "/static/media/VisitingOrganizations.97e684d3ce7720877c1f.mp4",
     "static/media/NewsInterview.mp4": "/static/media/NewsInterview.6e7134f74045db3f13d0.mp4",
     "static/media/video.mp4": "/static/media/video.941d05e6641d1a57ffc3.mp4",
@@ -77,10 +77,10 @@
     "static/media/Mazand.png": "/static/media/Mazand.89bc88a6ef1af993108c.png",
     "index.html": "/index.html",
     "main.54d72748.css.map": "/static/css/main.54d72748.css.map",
-    "main.2cbe29ad.js.map": "/static/js/main.2cbe29ad.js.map"
+    "main.c1751c37.js.map": "/static/js/main.c1751c37.js.map"
   },
   "entrypoints": [
     "static/css/main.54d72748.css",
-    "static/js/main.2cbe29ad.js"
+    "static/js/main.c1751c37.js"
   ]
 }
