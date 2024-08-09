@@ -28,7 +28,7 @@ function HomePage() {
     <div className="home-page">
       <MobMenu />
       <BEHeader />
-      <BELangBox />
+      {/* <BELangBox /> */}
       <div className="home-page__header">
         <div className="home-page__titre-wrapper">
           <img src={HOMETITRE} alt="" />
