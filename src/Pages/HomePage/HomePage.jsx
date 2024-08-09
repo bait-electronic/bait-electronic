@@ -8,20 +8,41 @@ import BECityProject from "../../Components/BEHome/BECityProject/BECityProject";
 import BEHonors from "../../Components/BEHome/BEHonors/BEHonors";
 import BEHeader from "../../Components/Global/BEHeader/BEHeader";
 import MobMenu from "../../Components/Global/Menu/MobMenu/MobMenu";
+import { useDispatch, useSelector } from "react-redux";
+import { changeLanguage } from "../../Store/Lang/Lang.action";
+import BELangBox from "../../Components/BELangBox/BELangBox";
 
 function HomePage() {
+  const dispatch = useDispatch();
+  const langState = useSelector((state) => state.langState);
   useEffect(() => {
+    const storedLang = localStorage.getItem("langLocalStorage");
+    const userLanguage = storedLang
+      ? JSON.parse(storedLang)[0].lang
+      : navigator.language.split("-")[0];
+    dispatch(changeLanguage(userLanguage));
     window.scrollTo({ top: 0, behavior: "smooth" });
-  }, []);
+  }, [dispatch]);
+
   return (
     <div className="home-page">
       <MobMenu />
       <BEHeader />
+      <BELangBox />
       <div className="home-page__header">
         <div className="home-page__titre-wrapper">
           <img src={HOMETITRE} alt="" />
           <div className="home-page__titre">
-            <p>صنایع بیت الکترونیک شمال</p>
+            {/* <p>
+              {langState.langList[0].lang === "en"
+                ? "en"
+                : langState.langList[0].lang === "fa"
+                ? "صنایع بیت الکترونیک شمال"
+                : "ru"}
+            </p> */}
+            <p>
+              صنایع بیت الکترونیک شمال
+            </p>
             <span>
               تحقق ایده های ناب در صنایع بیت الکترونیک شمال از جمله اهداف این
               مجموعه می‌باشد. از این رو کادری مجرب و متخصص در حوزه های مختلف از

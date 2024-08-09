@@ -144,7 +144,6 @@ import articlesS3Pdf from "../Assets/Images/Articles/3/pdf.pdf";
 import cvSam from "../Assets/Files/Developer/SaeedMolaeiCvAug2023.pdf";
 import logo from "../Assets/Images/Logo/logo.png"; 
 import footer from "../Assets/Images/Footer/Footer.jpg";
-
 import notFound from "../Assets/Images/NotFound/NotFound.jpg";
 
 //  image
@@ -296,6 +295,12 @@ export const cFooter = footer;
 
 //  store
 export const cChangePageNumber = "changePageNumber";
+export const cLangState =  'fa' | 'en' | 'ru';
+export const cDetectUserLanguage = () => {
+  const userLanguage = navigator.language.split('-')[0];
+  const supportedLanguages = ['fa', 'en', 'ru'];
+  return supportedLanguages.includes(userLanguage) ? userLanguage : 'en';
+};
 
 // file
 //  //  article

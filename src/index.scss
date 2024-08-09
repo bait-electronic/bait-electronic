@@ -75,7 +75,7 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 1800px) {
   .be-root {
     width: calc(100% - 290px);
-    margin-right: 290px;
+    margin-right: 250px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -86,6 +86,7 @@ body::-webkit-scrollbar {
     width: 100%;
     margin-right: 0;
   }
+  
 }
 @media screen and (min-width: 993px) {
   .pc-menu {
@@ -95,3 +96,4 @@ body::-webkit-scrollbar {
     display: none;
   }
 }
+// 093718696623

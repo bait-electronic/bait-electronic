@@ -1,0 +1,35 @@
+.be-lang-box {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  &__title {
+    width: fit-content;
+    height: fit-content;
+  }
+  &__subtitle {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1rem;
+    span {
+      width: 40px;
+      height: 40px;
+      padding: 4px 16px;
+      cursor: pointer;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        background-color: pink;
+      }
+    }
+    .active {
+      background-color: red;
+    }
+  }
+}
