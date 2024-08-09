@@ -1,7 +1,7 @@
 {
   "name": "bait-electronic",
   "version": "0.1.0",
-  "private": true,"homepage": "https://bait-electronic.github.io/bait-electronic",
+  "private": true,"homepage": "https://baitelectronic.com",
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",
     "@splidejs/splide": "^4.1.4",
@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "yarn run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
